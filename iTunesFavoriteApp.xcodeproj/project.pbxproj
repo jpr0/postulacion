@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9E41166C23FF704E00465FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41166B23FF704E00465FF8 /* AppDelegate.swift */; };
-		9E41166E23FF704E00465FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41166D23FF704E00465FF8 /* SceneDelegate.swift */; };
-		9E41167023FF704E00465FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41166F23FF704E00465FF8 /* ViewController.swift */; };
-		9E41167323FF704E00465FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167123FF704E00465FF8 /* Main.storyboard */; };
 		9E41167523FF704F00465FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167423FF704F00465FF8 /* Assets.xcassets */; };
 		9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */; };
 		9E41168323FF704F00465FF8 /* iTunesFavoriteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */; };
@@ -29,9 +26,6 @@
 /* Begin PBXFileReference section */
 		9E41166823FF704E00465FF8 /* iTunesFavoriteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesFavoriteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E41166B23FF704E00465FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E41166D23FF704E00465FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E41166F23FF704E00465FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E41167223FF704E00465FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E41167423FF704F00465FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E41167723FF704F00465FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E41167923FF704F00465FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,13 +73,8 @@
 		9E41166A23FF704E00465FF8 /* iTunesFavoriteApp */ = {
 			isa = PBXGroup;
 			children = (
-				9E41166B23FF704E00465FF8 /* AppDelegate.swift */,
-				9E41166D23FF704E00465FF8 /* SceneDelegate.swift */,
-				9E41166F23FF704E00465FF8 /* ViewController.swift */,
-				9E41167123FF704E00465FF8 /* Main.storyboard */,
-				9E41167423FF704F00465FF8 /* Assets.xcassets */,
-				9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */,
-				9E41167923FF704F00465FF8 /* Info.plist */,
+				9E41168E23FF72BA00465FF8 /* app */,
+				9E41168F23FF72CF00465FF8 /* app-resources */,
 			);
 			path = iTunesFavoriteApp;
 			sourceTree = "<group>";
@@ -97,6 +86,24 @@
 				9E41168423FF704F00465FF8 /* Info.plist */,
 			);
 			path = iTunesFavoriteAppTests;
+			sourceTree = "<group>";
+		};
+		9E41168E23FF72BA00465FF8 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				9E41166B23FF704E00465FF8 /* AppDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		9E41168F23FF72CF00465FF8 /* app-resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E41167423FF704F00465FF8 /* Assets.xcassets */,
+				9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */,
+				9E41167923FF704F00465FF8 /* Info.plist */,
+			);
+			path = "app-resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +189,6 @@
 			files = (
 				9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */,
 				9E41167523FF704F00465FF8 /* Assets.xcassets in Resources */,
-				9E41167323FF704E00465FF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E41167023FF704E00465FF8 /* ViewController.swift in Sources */,
 				9E41166C23FF704E00465FF8 /* AppDelegate.swift in Sources */,
-				9E41166E23FF704E00465FF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +229,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9E41167123FF704E00465FF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E41167223FF704E00465FF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
