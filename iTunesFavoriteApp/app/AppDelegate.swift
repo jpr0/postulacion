@@ -13,14 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
-    private let environment = Environment(urlString: "")
+    private let environment = Environment(urlString: "https://itunes.apple.com")
     
     private var initializer: AppInitializable {
         ApplicationController(environment: environment)
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        guard let window = self.window else { return false }
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        guard let window = window else { return false }
 
         initializer.start(with: window)
 

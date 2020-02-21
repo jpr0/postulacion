@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,23 @@
 		9E41168323FF704F00465FF8 /* iTunesFavoriteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */; };
 		9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41169223FF745800465FF8 /* ApplicationController.swift */; };
 		9E82626223FF774C00342A8B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E82626123FF774C00342A8B /* Environment.swift */; };
+		BC9A08352400153300FC73E4 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08332400153300FC73E4 /* ArtistViewController.swift */; };
+		BC9A08362400153300FC73E4 /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9A08342400153300FC73E4 /* ArtistViewController.xib */; };
+		BC9A08382400235100FC73E4 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08372400235100FC73E4 /* ArtistModel.swift */; };
+		BC9A083C24003E6000FC73E4 /* ArtistListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A083B24003E6000FC73E4 /* ArtistListContract.swift */; };
+		BC9A083F2400455B00FC73E4 /* ArtistsListPresentter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A083E2400455B00FC73E4 /* ArtistsListPresentter.swift */; };
+		BC9A08412400481300FC73E4 /* ArtistListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08402400481300FC73E4 /* ArtistListRouter.swift */; };
+		BC9A0843240048CB00FC73E4 /* ArtistListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A0842240048CB00FC73E4 /* ArtistListInteractor.swift */; };
+		BC9A084824004B6600FC73E4 /* LocalArtistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A084724004B6600FC73E4 /* LocalArtistRepository.swift */; };
+		BC9A084B24004D0E00FC73E4 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A084A24004D0E00FC73E4 /* LocalStore.swift */; };
+		BC9A084D24004DC900FC73E4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A084C24004DC900FC73E4 /* CoreDataStack.swift */; };
+		BC9A08522400561300FC73E4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A084F2400561300FC73E4 /* ApiClient.swift */; };
+		BC9A08532400561300FC73E4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08502400561300FC73E4 /* API.swift */; };
+		BC9A08542400561300FC73E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08512400561300FC73E4 /* Endpoint.swift */; };
+		BC9A085B2400592100FC73E4 /* TrackEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08592400592100FC73E4 /* TrackEntity+CoreDataClass.swift */; };
+		BC9A085C2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A085A2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift */; };
+		BC9A085E240059FC00FC73E4 /* iTunesModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BC9A085D240059FC00FC73E4 /* iTunesModel.xcdatamodel */; };
+		BC9A086024005E6F00FC73E4 /* RemoteArtistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A085F24005E6F00FC73E4 /* RemoteArtistRepository.swift */; };
 		EB19EB9C41B7BB6809E9FE7D /* Pods_iTunesFavoriteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D440DCBFC639E5D2330266E9 /* Pods_iTunesFavoriteApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +58,23 @@
 		9E41168423FF704F00465FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E41169223FF745800465FF8 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		9E82626123FF774C00342A8B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BC9A08332400153300FC73E4 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		BC9A08342400153300FC73E4 /* ArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
+		BC9A08372400235100FC73E4 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		BC9A083B24003E6000FC73E4 /* ArtistListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListContract.swift; sourceTree = "<group>"; };
+		BC9A083E2400455B00FC73E4 /* ArtistsListPresentter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListPresentter.swift; sourceTree = "<group>"; };
+		BC9A08402400481300FC73E4 /* ArtistListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListRouter.swift; sourceTree = "<group>"; };
+		BC9A0842240048CB00FC73E4 /* ArtistListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListInteractor.swift; sourceTree = "<group>"; };
+		BC9A084724004B6600FC73E4 /* LocalArtistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalArtistRepository.swift; sourceTree = "<group>"; };
+		BC9A084A24004D0E00FC73E4 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		BC9A084C24004DC900FC73E4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		BC9A084F2400561300FC73E4 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BC9A08502400561300FC73E4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BC9A08512400561300FC73E4 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		BC9A08592400592100FC73E4 /* TrackEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC9A085A2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC9A085D240059FC00FC73E4 /* iTunesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesModel.xcdatamodel; sourceTree = "<group>"; };
+		BC9A085F24005E6F00FC73E4 /* RemoteArtistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteArtistRepository.swift; sourceTree = "<group>"; };
 		D440DCBFC639E5D2330266E9 /* Pods_iTunesFavoriteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesFavoriteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA034F1C78A673FDF7F08B8C /* Pods-iTunesFavoriteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesFavoriteApp.debug.xcconfig"; path = "Target Support Files/Pods-iTunesFavoriteApp/Pods-iTunesFavoriteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0D2C4714DC6CBEF2FF4548 /* Pods-iTunesFavoriteAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesFavoriteAppTests.debug.xcconfig"; path = "Target Support Files/Pods-iTunesFavoriteAppTests/Pods-iTunesFavoriteAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +108,6 @@
 				EF0D2C4714DC6CBEF2FF4548 /* Pods-iTunesFavoriteAppTests.debug.xcconfig */,
 				0675F793198103021BA2C264 /* Pods-iTunesFavoriteAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +146,8 @@
 				9E41168E23FF72BA00465FF8 /* app */,
 				9E41168F23FF72CF00465FF8 /* app-resources */,
 				9E41169023FF73E600465FF8 /* app-model */,
+				BC9A0830240014D600FC73E4 /* app-modules */,
+				BC9A084424004ABB00FC73E4 /* app-factory */,
 			);
 			path = iTunesFavoriteApp;
 			sourceTree = "<group>";
@@ -147,6 +182,11 @@
 		9E41169023FF73E600465FF8 /* app-model */ = {
 			isa = PBXGroup;
 			children = (
+				BC9A08552400589500FC73E4 /* data */,
+				BC9A084E2400561300FC73E4 /* network */,
+				BC9A084524004AEB00FC73E4 /* domain */,
+				BC9A084924004CF800FC73E4 /* store */,
+				BC9A084624004B3600FC73E4 /* repositories */,
 				9E82626023FF773E00342A8B /* config */,
 				9E41169223FF745800465FF8 /* ApplicationController.swift */,
 			);
@@ -159,6 +199,88 @@
 				9E82626123FF774C00342A8B /* Environment.swift */,
 			);
 			path = config;
+			sourceTree = "<group>";
+		};
+		BC9A0830240014D600FC73E4 /* app-modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A083924003D6800FC73E4 /* ArtistList */,
+			);
+			path = "app-modules";
+			sourceTree = "<group>";
+		};
+		BC9A083924003D6800FC73E4 /* ArtistList */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A083B24003E6000FC73E4 /* ArtistListContract.swift */,
+				BC9A0842240048CB00FC73E4 /* ArtistListInteractor.swift */,
+				BC9A083E2400455B00FC73E4 /* ArtistsListPresentter.swift */,
+				BC9A08402400481300FC73E4 /* ArtistListRouter.swift */,
+				BC9A083D240041D800FC73E4 /* ViewControllers */,
+			);
+			path = ArtistList;
+			sourceTree = "<group>";
+		};
+		BC9A083D240041D800FC73E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A08332400153300FC73E4 /* ArtistViewController.swift */,
+				BC9A08342400153300FC73E4 /* ArtistViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC9A084424004ABB00FC73E4 /* app-factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "app-factory";
+			sourceTree = "<group>";
+		};
+		BC9A084524004AEB00FC73E4 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A08372400235100FC73E4 /* ArtistModel.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		BC9A084624004B3600FC73E4 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A084724004B6600FC73E4 /* LocalArtistRepository.swift */,
+				BC9A085F24005E6F00FC73E4 /* RemoteArtistRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		BC9A084924004CF800FC73E4 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A084A24004D0E00FC73E4 /* LocalStore.swift */,
+				BC9A084C24004DC900FC73E4 /* CoreDataStack.swift */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		BC9A084E2400561300FC73E4 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A084F2400561300FC73E4 /* ApiClient.swift */,
+				BC9A08502400561300FC73E4 /* API.swift */,
+				BC9A08512400561300FC73E4 /* Endpoint.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		BC9A08552400589500FC73E4 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A085D240059FC00FC73E4 /* iTunesModel.xcdatamodel */,
+				BC9A08592400592100FC73E4 /* TrackEntity+CoreDataClass.swift */,
+				BC9A085A2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +369,7 @@
 			files = (
 				9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */,
 				9E41167523FF704F00465FF8 /* Assets.xcassets in Resources */,
+				BC9A08362400153300FC73E4 /* ArtistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +452,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */,
+				BC9A0843240048CB00FC73E4 /* ArtistListInteractor.swift in Sources */,
+				BC9A084824004B6600FC73E4 /* LocalArtistRepository.swift in Sources */,
+				BC9A084D24004DC900FC73E4 /* CoreDataStack.swift in Sources */,
+				BC9A08542400561300FC73E4 /* Endpoint.swift in Sources */,
 				9E82626223FF774C00342A8B /* Environment.swift in Sources */,
+				BC9A083C24003E6000FC73E4 /* ArtistListContract.swift in Sources */,
+				BC9A08532400561300FC73E4 /* API.swift in Sources */,
+				BC9A083F2400455B00FC73E4 /* ArtistsListPresentter.swift in Sources */,
+				BC9A084B24004D0E00FC73E4 /* LocalStore.swift in Sources */,
+				BC9A08522400561300FC73E4 /* ApiClient.swift in Sources */,
+				BC9A085C2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift in Sources */,
+				BC9A086024005E6F00FC73E4 /* RemoteArtistRepository.swift in Sources */,
+				BC9A08382400235100FC73E4 /* ArtistModel.swift in Sources */,
+				BC9A08412400481300FC73E4 /* ArtistListRouter.swift in Sources */,
+				BC9A08352400153300FC73E4 /* ArtistViewController.swift in Sources */,
+				BC9A085B2400592100FC73E4 /* TrackEntity+CoreDataClass.swift in Sources */,
+				BC9A085E240059FC00FC73E4 /* iTunesModel.xcdatamodel in Sources */,
 				9E41166C23FF704E00465FF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K75SLP959S;
 				INFOPLIST_FILE = "iTunesFavoriteApp/app-resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K75SLP959S;
 				INFOPLIST_FILE = "iTunesFavoriteApp/app-resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
