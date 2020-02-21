@@ -11,6 +11,8 @@
 		9E41167523FF704F00465FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167423FF704F00465FF8 /* Assets.xcassets */; };
 		9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */; };
 		9E41168323FF704F00465FF8 /* iTunesFavoriteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */; };
+		9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41169223FF745800465FF8 /* ApplicationController.swift */; };
+		9E82626223FF774C00342A8B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E82626123FF774C00342A8B /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		9E41167E23FF704F00465FF8 /* iTunesFavoriteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesFavoriteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesFavoriteAppTests.swift; sourceTree = "<group>"; };
 		9E41168423FF704F00465FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E41169223FF745800465FF8 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		9E82626123FF774C00342A8B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				9E41168E23FF72BA00465FF8 /* app */,
 				9E41168F23FF72CF00465FF8 /* app-resources */,
+				9E41169023FF73E600465FF8 /* app-model */,
 			);
 			path = iTunesFavoriteApp;
 			sourceTree = "<group>";
@@ -104,6 +109,23 @@
 				9E41167923FF704F00465FF8 /* Info.plist */,
 			);
 			path = "app-resources";
+			sourceTree = "<group>";
+		};
+		9E41169023FF73E600465FF8 /* app-model */ = {
+			isa = PBXGroup;
+			children = (
+				9E82626023FF773E00342A8B /* config */,
+				9E41169223FF745800465FF8 /* ApplicationController.swift */,
+			);
+			path = "app-model";
+			sourceTree = "<group>";
+		};
+		9E82626023FF773E00342A8B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				9E82626123FF774C00342A8B /* Environment.swift */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */,
+				9E82626223FF774C00342A8B /* Environment.swift in Sources */,
 				9E41166C23FF704E00465FF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K75SLP959S;
-				INFOPLIST_FILE = iTunesFavoriteApp/Info.plist;
+				INFOPLIST_FILE = "iTunesFavoriteApp/app-resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K75SLP959S;
-				INFOPLIST_FILE = iTunesFavoriteApp/Info.plist;
+				INFOPLIST_FILE = "iTunesFavoriteApp/app-resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
