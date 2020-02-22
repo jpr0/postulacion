@@ -21,7 +21,9 @@ class RemoteArtistRepository {
     }
 }
 extension RemoteArtistRepository: RemoteArtistRepositoryProtocol {
-    func  getArtist(with query: SearchTerms) -> Single<[ArtistModel]> {
-        return api.request(API.Media.searchTracks(by: query)).map { $0.results }
+    func getArtist(with query: SearchTerms) -> Single<[ArtistModel]> {
+        return api.request(API.Media.searchTracks(by: query))
+            .do(onSuccess: { print($0) })
+            .map { $0.results }
     }
 }

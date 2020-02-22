@@ -14,9 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     private let environment = Environment(urlString: "https://itunes.apple.com")
-    
+
     private var initializer: AppInitializable {
-        ApplicationController(environment: environment)
+        ApplicationController(factory: ApplicationFactory(environment: environment))
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

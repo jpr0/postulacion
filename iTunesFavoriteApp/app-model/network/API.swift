@@ -8,13 +8,22 @@
 
 import Foundation
 
+struct Throwable<T: Decodable>: Decodable {
+    let result: Result<T, Error>
+
+    init(from decoder: Decoder) throws {
+        result = Result(catching: { try T(from: decoder) })
+    }
+}
+
 struct Track: Decodable {
     let wrapperType: String
     let collectionId: Int
+    let trackId: Int
     let artistName: String
     let collectionName: String
-    let trackName: String?
-    let previewUrl: String?
+    let trackName: String
+    let previewUrl: String
     let artworkUrl100: String
 }
 
@@ -25,7 +34,6 @@ struct SearchTerms: Payload {
         return [
             URLQueryItem(name: "term", value: "\(terms)"),
             URLQueryItem(name: "mediaType", value: "music"),
-            URLQueryItem(name: "limit", value: "99")
         ]
     }
 }
@@ -52,7 +60,12 @@ enum API {
 
     enum Media {
         static func searchTracks(by payload: SearchTerms) -> Endpoint<NestedResult<[ArtistModel]>> {
-            return Endpoint(path: "/search", headers: headers(for: payload), parameters: payload)
+            return Endpoint(method: .get, path: "/search", headers: headers(for: payload), parameters: payload) { data in
+                let throwables = try JSONDecoder().decode(NestedResult<[Throwable<ArtistModel>]>.self, from: data)
+                let products = throwables.results.compactMap { try? $0.result.get() }
+
+                return NestedResult<[ArtistModel]>(results: products)
+            }
         }
 
         static func findAlbum(by payload: SearchAlbum) -> Endpoint<NestedResult<[Track]>> {

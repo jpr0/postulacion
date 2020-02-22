@@ -11,6 +11,7 @@ import Foundation
 struct ArtistModel: Decodable {
     let wrapperType: String
     let collectionId: Int
+    let trackId: Int
     let artistName: String
     let collectionName: String
     let trackName: String?

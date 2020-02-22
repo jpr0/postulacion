@@ -53,7 +53,10 @@ class Endpoint<T> {
 extension Endpoint where T: Swift.Decodable {
     convenience init(method: Method = .get, path: Path, headers: Headers? = Headers(), parameters: Payload? = nil) {
         self.init(method: method, path: path, headers: headers, parameters: parameters, decode: {
+            //rint("Decoded string: \(String(data: $0, encoding: .utf8))")
             return try JSONDecoder().decode(T.self, from: $0)
         })
     }
 }
+
+

@@ -13,12 +13,12 @@ protocol AppInitializable {
 }
 
 class ApplicationController {
-    private let environment: Environment
-
     private let rootViewController = UINavigationController()
-    
-    init(environment: Environment) {
-        self.environment = environment
+
+    private let factory: ApplicationFactoryProtocol
+
+    init(factory: ApplicationFactoryProtocol) {
+        self.factory = factory
     }
 }
 extension ApplicationController: AppInitializable {
@@ -29,26 +29,19 @@ extension ApplicationController: AppInitializable {
         window.backgroundColor = .white
         window.makeKeyAndVisible()
     }
-    
-    func startSearchModule() -> UIViewController {
-        let noCacheConfig = URLSessionConfiguration.default
-        noCacheConfig.requestCachePolicy = .reloadIgnoringLocalCacheData
-        noCacheConfig.urlCache = nil
-        
-        let url = URL(string: environment.urlString)!
-        let client = RestClient(manager: URLSession(configuration: noCacheConfig), url: url)
 
-        let remoteRepository = RemoteArtistRepository(api: client)
-        
+    func startSearchModule() -> UIViewController {
         let view = ArtistViewController()
         let router = ArtistListRouter()
-        let interactor = ArtistListInteractor(remoteArtistRepository: remoteRepository)
+        let interactor = ArtistListInteractor(remoteArtistRepository: factory.artistRepository())
         let presenter = ArtistListPresenter(interactor: interactor, router: router)
 
         view.presenter = presenter
         presenter.view = view
         router.viewController = view
         interactor.delegate = presenter
+        
+        view.hud = SVProgressHUDWrapper()
         
         return view
     }

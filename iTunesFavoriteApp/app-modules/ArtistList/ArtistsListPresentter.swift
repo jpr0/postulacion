@@ -21,6 +21,7 @@ class ArtistListPresenter {
 }
 extension ArtistListPresenter: ArtistListPresenterProtocol {
     func searchArtists(by name: String) {
+        view?.showLoading()
         interactor?.fetchArtists(by: name)
     }
 }

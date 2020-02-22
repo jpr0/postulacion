@@ -15,8 +15,8 @@ enum LocalStoreError: Error {
 
 protocol LocalStoreProtocol {
     func save(artist: ArtistModel) -> Completable
-    func deleteArtist(by id: Int32) -> Completable
     func retrieveAll() -> Single<[TrackEntity]>
+    func deleteArtist(by id: Int32) -> Completable
 }
 
 class CoreDataLocalStore {
@@ -28,6 +28,7 @@ class CoreDataLocalStore {
 
 }
 extension CoreDataLocalStore: LocalStoreProtocol {
+    
     func save(artist: ArtistModel) -> Completable {
         return Completable.create { observer in
             self.stack.storeContainer.performBackgroundTask { context in
@@ -53,13 +54,6 @@ extension CoreDataLocalStore: LocalStoreProtocol {
         }
     }
 
-    func deleteArtist(by id: Int32) -> Completable {
-        return Completable.create { observer in
-            // TODO
-            return Disposables.create()
-        }
-    }
-
     func retrieveAll() -> Single<[TrackEntity]> {
         let privateManagedObjectContext = stack.storeContainer.newBackgroundContext()
 
@@ -79,4 +73,12 @@ extension CoreDataLocalStore: LocalStoreProtocol {
             return Disposables.create()
         }
     }
+    
+    func deleteArtist(by id: Int32) -> Completable {
+        return Completable.create { observer in
+            // TODO
+            return Disposables.create()
+        }
+    }
+
 }
