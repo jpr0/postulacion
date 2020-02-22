@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="TrackEntity" representedClassName="TrackEntity" syncable="YES">
         <attribute name="artistName" optional="YES" attributeType="String"/>
         <attribute name="artworkUrl100" optional="YES" attributeType="String"/>
         <attribute name="collectionId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="collectionName" optional="YES" attributeType="String"/>
         <attribute name="previewUrl" optional="YES" attributeType="String"/>
+        <attribute name="trackId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="trackName" optional="YES" attributeType="String"/>
         <attribute name="wrapperType" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="TrackEntity" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="TrackEntity" positionX="-63" positionY="-18" width="128" height="163"/>
     </elements>
 </model>

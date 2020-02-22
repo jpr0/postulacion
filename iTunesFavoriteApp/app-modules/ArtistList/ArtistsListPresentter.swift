@@ -24,6 +24,10 @@ extension ArtistListPresenter: ArtistListPresenterProtocol {
         view?.showLoading()
         interactor?.fetchArtists(by: name)
     }
+    
+    func selected(track: ArtistModel) {
+        router?.showTrackDetails(artistModel: track)
+    }
 }
 extension ArtistListPresenter: ArtistListInteractorDelegate {
     func fetchArtistSuccess(artists: [ArtistModel]) {

@@ -31,6 +31,7 @@ protocol ArtistListInteractorDelegate: class {
 protocol ArtistListRouterProtocol: class {
     var viewController: UIViewController? { get set }
 
+    func showTrackDetails(artistModel: ArtistModel)
     func show(error: Error)
 }
 
@@ -40,4 +41,5 @@ protocol ArtistListPresenterProtocol: class {
     var router: ArtistListRouterProtocol? { get set }
 
     func searchArtists(by name: String)
+    func selected(track: ArtistModel)
 }

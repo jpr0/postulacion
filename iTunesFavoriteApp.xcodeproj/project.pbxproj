@@ -13,8 +13,20 @@
 		9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E41167623FF704F00465FF8 /* LaunchScreen.storyboard */; };
 		9E41168323FF704F00465FF8 /* iTunesFavoriteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */; };
 		9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41169223FF745800465FF8 /* ApplicationController.swift */; };
-		9E67B8C124009D9A000F23C8 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8C024009D9A000F23C8 /* UIViewController+Ex.swift */; };
 		9E67B8C32400A57C000F23C8 /* ApplicationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8C22400A57C000F23C8 /* ApplicationFactory.swift */; };
+		9E67B8C72400BD5D000F23C8 /* TrackDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8C62400BD5D000F23C8 /* TrackDetailsContract.swift */; };
+		9E67B8CC2400BF64000F23C8 /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8CA2400BF64000F23C8 /* TrackDetailsViewController.swift */; };
+		9E67B8CD2400BF64000F23C8 /* TrackDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E67B8CB2400BF64000F23C8 /* TrackDetailsViewController.xib */; };
+		9E67B8CF2400BFD3000F23C8 /* TrackDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8CE2400BFD3000F23C8 /* TrackDetailsRouter.swift */; };
+		9E67B8D12400CD42000F23C8 /* TrackDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8D02400CD42000F23C8 /* TrackDetailsPresenter.swift */; };
+		9E67B8D32400D82E000F23C8 /* TrackDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8D22400D82E000F23C8 /* TrackDetailsInteractor.swift */; };
+		9E67B8D62400FB23000F23C8 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8D52400FB23000F23C8 /* UIViewController+Ex.swift */; };
+		9E67B8D92400FF6D000F23C8 /* FavoritesListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8D82400FF6D000F23C8 /* FavoritesListContract.swift */; };
+		9E67B8DD2401004E000F23C8 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8DB2401004E000F23C8 /* FavoritesListViewController.swift */; };
+		9E67B8DE2401004E000F23C8 /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E67B8DC2401004E000F23C8 /* FavoritesListViewController.xib */; };
+		9E67B8E0240102D8000F23C8 /* FavoritesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8DF240102D8000F23C8 /* FavoritesListPresenter.swift */; };
+		9E67B8E2240104B3000F23C8 /* FavoritesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8E1240104B3000F23C8 /* FavoritesListInteractor.swift */; };
+		9E67B8E4240106C1000F23C8 /* FavoritesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67B8E3240106C1000F23C8 /* FavoritesListRouter.swift */; };
 		9E82626223FF774C00342A8B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E82626123FF774C00342A8B /* Environment.swift */; };
 		BC9A08352400153300FC73E4 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A08332400153300FC73E4 /* ArtistViewController.swift */; };
 		BC9A08362400153300FC73E4 /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9A08342400153300FC73E4 /* ArtistViewController.xib */; };
@@ -59,8 +71,20 @@
 		9E41168223FF704F00465FF8 /* iTunesFavoriteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesFavoriteAppTests.swift; sourceTree = "<group>"; };
 		9E41168423FF704F00465FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E41169223FF745800465FF8 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
-		9E67B8C024009D9A000F23C8 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9E67B8C22400A57C000F23C8 /* ApplicationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplicationFactory.swift; path = "iTunesFavoriteApp/app-model/extensions/ApplicationFactory.swift"; sourceTree = SOURCE_ROOT; };
+		9E67B8C62400BD5D000F23C8 /* TrackDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsContract.swift; sourceTree = "<group>"; };
+		9E67B8CA2400BF64000F23C8 /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
+		9E67B8CB2400BF64000F23C8 /* TrackDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailsViewController.xib; sourceTree = "<group>"; };
+		9E67B8CE2400BFD3000F23C8 /* TrackDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsRouter.swift; sourceTree = "<group>"; };
+		9E67B8D02400CD42000F23C8 /* TrackDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsPresenter.swift; sourceTree = "<group>"; };
+		9E67B8D22400D82E000F23C8 /* TrackDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsInteractor.swift; sourceTree = "<group>"; };
+		9E67B8D52400FB23000F23C8 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		9E67B8D82400FF6D000F23C8 /* FavoritesListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListContract.swift; sourceTree = "<group>"; };
+		9E67B8DB2401004E000F23C8 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		9E67B8DC2401004E000F23C8 /* FavoritesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesListViewController.xib; sourceTree = "<group>"; };
+		9E67B8DF240102D8000F23C8 /* FavoritesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListPresenter.swift; sourceTree = "<group>"; };
+		9E67B8E1240104B3000F23C8 /* FavoritesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListInteractor.swift; sourceTree = "<group>"; };
+		9E67B8E3240106C1000F23C8 /* FavoritesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListRouter.swift; sourceTree = "<group>"; };
 		9E82626123FF774C00342A8B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		BC9A08332400153300FC73E4 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		BC9A08342400153300FC73E4 /* ArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
@@ -186,7 +210,7 @@
 		9E41169023FF73E600465FF8 /* app-model */ = {
 			isa = PBXGroup;
 			children = (
-				9E67B8BF24009D46000F23C8 /* extensions */,
+				9E67B8D42400FB1B000F23C8 /* ui */,
 				BC9A08552400589500FC73E4 /* data */,
 				BC9A084E2400561300FC73E4 /* network */,
 				BC9A084524004AEB00FC73E4 /* domain */,
@@ -198,12 +222,54 @@
 			path = "app-model";
 			sourceTree = "<group>";
 		};
-		9E67B8BF24009D46000F23C8 /* extensions */ = {
+		9E67B8C42400BCDA000F23C8 /* TrackDetails */ = {
 			isa = PBXGroup;
 			children = (
-				9E67B8C024009D9A000F23C8 /* UIViewController+Ex.swift */,
+				9E67B8C62400BD5D000F23C8 /* TrackDetailsContract.swift */,
+				9E67B8CE2400BFD3000F23C8 /* TrackDetailsRouter.swift */,
+				9E67B8D22400D82E000F23C8 /* TrackDetailsInteractor.swift */,
+				9E67B8D02400CD42000F23C8 /* TrackDetailsPresenter.swift */,
+				9E67B8C82400BF39000F23C8 /* viewControllers */,
 			);
-			path = extensions;
+			path = TrackDetails;
+			sourceTree = "<group>";
+		};
+		9E67B8C82400BF39000F23C8 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E67B8CA2400BF64000F23C8 /* TrackDetailsViewController.swift */,
+				9E67B8CB2400BF64000F23C8 /* TrackDetailsViewController.xib */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		9E67B8D42400FB1B000F23C8 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				9E67B8D52400FB23000F23C8 /* UIViewController+Ex.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		9E67B8D72400FE58000F23C8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				9E67B8D82400FF6D000F23C8 /* FavoritesListContract.swift */,
+				9E67B8E1240104B3000F23C8 /* FavoritesListInteractor.swift */,
+				9E67B8DF240102D8000F23C8 /* FavoritesListPresenter.swift */,
+				9E67B8E3240106C1000F23C8 /* FavoritesListRouter.swift */,
+				9E67B8DA2401003A000F23C8 /* ViewControllers */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		9E67B8DA2401003A000F23C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E67B8DB2401004E000F23C8 /* FavoritesListViewController.swift */,
+				9E67B8DC2401004E000F23C8 /* FavoritesListViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9E82626023FF773E00342A8B /* config */ = {
@@ -217,6 +283,8 @@
 		BC9A0830240014D600FC73E4 /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				9E67B8D72400FE58000F23C8 /* Favorites */,
+				9E67B8C42400BCDA000F23C8 /* TrackDetails */,
 				BC9A083924003D6800FC73E4 /* ArtistList */,
 			);
 			path = "app-modules";
@@ -382,7 +450,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E41167823FF704F00465FF8 /* LaunchScreen.storyboard in Resources */,
+				9E67B8CD2400BF64000F23C8 /* TrackDetailsViewController.xib in Resources */,
 				9E41167523FF704F00465FF8 /* Assets.xcassets in Resources */,
+				9E67B8DE2401004E000F23C8 /* FavoritesListViewController.xib in Resources */,
 				BC9A08362400153300FC73E4 /* ArtistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,25 +536,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E41169323FF745800465FF8 /* ApplicationController.swift in Sources */,
+				9E67B8D32400D82E000F23C8 /* TrackDetailsInteractor.swift in Sources */,
+				9E67B8DD2401004E000F23C8 /* FavoritesListViewController.swift in Sources */,
 				BC9A0843240048CB00FC73E4 /* ArtistListInteractor.swift in Sources */,
 				BC9A084824004B6600FC73E4 /* LocalArtistRepository.swift in Sources */,
+				9E67B8D92400FF6D000F23C8 /* FavoritesListContract.swift in Sources */,
 				BC9A084D24004DC900FC73E4 /* CoreDataStack.swift in Sources */,
+				9E67B8D62400FB23000F23C8 /* UIViewController+Ex.swift in Sources */,
+				9E67B8C72400BD5D000F23C8 /* TrackDetailsContract.swift in Sources */,
 				BC9A08542400561300FC73E4 /* Endpoint.swift in Sources */,
 				9E82626223FF774C00342A8B /* Environment.swift in Sources */,
+				9E67B8E4240106C1000F23C8 /* FavoritesListRouter.swift in Sources */,
+				9E67B8D12400CD42000F23C8 /* TrackDetailsPresenter.swift in Sources */,
 				BC9A083C24003E6000FC73E4 /* ArtistListContract.swift in Sources */,
 				BC9A08532400561300FC73E4 /* API.swift in Sources */,
 				BC9A083F2400455B00FC73E4 /* ArtistsListPresentter.swift in Sources */,
 				BC9A084B24004D0E00FC73E4 /* LocalStore.swift in Sources */,
 				BC9A08522400561300FC73E4 /* ApiClient.swift in Sources */,
+				9E67B8CC2400BF64000F23C8 /* TrackDetailsViewController.swift in Sources */,
 				BC9A085C2400592100FC73E4 /* TrackEntity+CoreDataProperties.swift in Sources */,
 				BC9A086024005E6F00FC73E4 /* RemoteArtistRepository.swift in Sources */,
+				9E67B8CF2400BFD3000F23C8 /* TrackDetailsRouter.swift in Sources */,
 				BC9A08382400235100FC73E4 /* ArtistModel.swift in Sources */,
 				BC9A08412400481300FC73E4 /* ArtistListRouter.swift in Sources */,
 				BC9A08352400153300FC73E4 /* ArtistViewController.swift in Sources */,
 				BC9A085B2400592100FC73E4 /* TrackEntity+CoreDataClass.swift in Sources */,
 				BC9A085E240059FC00FC73E4 /* iTunesModel.xcdatamodel in Sources */,
+				9E67B8E2240104B3000F23C8 /* FavoritesListInteractor.swift in Sources */,
+				9E67B8E0240102D8000F23C8 /* FavoritesListPresenter.swift in Sources */,
 				9E67B8C32400A57C000F23C8 /* ApplicationFactory.swift in Sources */,
-				9E67B8C124009D9A000F23C8 /* UIViewController+Ex.swift in Sources */,
 				9E41166C23FF704E00465FF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

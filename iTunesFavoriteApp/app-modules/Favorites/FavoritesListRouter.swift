@@ -1,16 +1,16 @@
 //
-//  ArtistListRouter.swift
+//  FavoritesListRouter.swift
 //  iTunesFavoriteApp
 //
-//  Created by Juan Pablo on 21-02-20.
+//  Created by Slacker on 22-02-20.
 //  Copyright © 2020 slacker. All rights reserved.
 //
 
 import UIKit
 
-class ArtistListRouter {
-    weak var viewController: UIViewController?
-    weak var navigationController: UINavigationController?
+class FavoritesListRouter {
+    var viewController: UIViewController?
+    var navigationController: UINavigationController?
     
     private let factory: ApplicationFactoryProtocol
     
@@ -18,7 +18,7 @@ class ArtistListRouter {
         self.factory = factory
     }
 }
-extension ArtistListRouter: ArtistListRouterProtocol {
+extension FavoritesListRouter: FavoritesListRouterProtocol {
     func showTrackDetails(artistModel: ArtistModel) {
         let view = TrackDetailsViewController()
         let router = TrackDetailsRouter()
@@ -37,7 +37,7 @@ extension ArtistListRouter: ArtistListRouterProtocol {
         
         navigationController?.pushViewController(view, animated: true)
     }
-    
+
     func show(error: Error) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)

@@ -9,6 +9,7 @@ target 'iTunesFavoriteApp' do
   pod 'RxSwift', '4.4.1'
   pod 'RxCocoa', '4.4.1'
   pod 'SVProgressHUD'
+  pod 'SDWebImage'
 
   target 'iTunesFavoriteAppTests' do
     inherit! :search_paths

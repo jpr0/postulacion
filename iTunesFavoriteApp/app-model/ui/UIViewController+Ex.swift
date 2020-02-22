@@ -31,11 +31,7 @@ extension HudDisplayable {
     }
 }
 
-class SVProgressHUDWrapper: HudWrapper {
-    init() {
-        SVProgressHUD.setMaximumDismissTimeInterval(1.0)
-    }
-    
+class SVProgressHUDWrapper: HudWrapper {    
     func show() {
         DispatchQueue.main.async(execute: SVProgressHUD.show)
     }

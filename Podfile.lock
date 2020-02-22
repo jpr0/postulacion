@@ -4,11 +4,15 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - RxCocoa (= 4.4.1)
   - RxSwift (= 4.4.1)
+  - SDWebImage
   - SVProgressHUD
 
 SPEC REPOS:
@@ -16,14 +20,16 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxSwift
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 6d2f0354bb68d9f93e0c16c3224b6defd164c01f
+PODFILE CHECKSUM: e49bfe8269e2a89bd20941d413a00efcbab0e627
 
 COCOAPODS: 1.8.4

@@ -17,4 +17,8 @@ struct ArtistModel: Decodable {
     let trackName: String?
     let previewUrl: String?
     let artworkUrl100: String
+    
+    static func empty() -> ArtistModel {
+        return ArtistModel(wrapperType: "", collectionId: 0, trackId: 0, artistName: "", collectionName: "", trackName: "", previewUrl: "", artworkUrl100: "")
+    }
 }
