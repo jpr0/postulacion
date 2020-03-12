@@ -1,0 +1,27 @@
+default_platform :ios
+
+platform :ios do
+
+  desc "Runs all the UI tests"
+  lane :ui_tests do
+    run_test(scheme: "UITests")
+  end
+
+  private_lane :run_test do |options|
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
+    scan(
+      workspace:"iTunesFavoriteApp.xcworkspace",
+      scheme: options[:scheme],
+      device: "iPhone 11 Pro (13.1)",
+      output_directory: "build/reports/tests/",
+      output_types: "junit",
+      output_files: options[:scheme] + ".xml",
+      buildlog_path: "build/rawlog/",
+      skip_build: true,
+      formatter: "xcpretty-json-formatter",
+      thread_sanitizer: false,
+      xcargs: "-UseNewBuildSystem='YES' COMPILER_INDEX_STORE_ENABLE='NO' 2> build/rawlog/" + options[:scheme] + "-Error.log"
+    )
+  end
+
+end
