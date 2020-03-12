@@ -1,13 +1,6 @@
 language: objective-c
 osx_image: xcode11.1
 
-cache:
-  directories:
-  - "$HOME/.vendor/bundle/"
-  - Pods
-  - "$HOME/.gradle/caches/"
-  - "$HOME/.gradle/wrapper/"
-
 if: "(branch = master AND type = push) OR (head_branch != master AND type = pull_request)"
 
 install:
