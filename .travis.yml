@@ -1,0 +1,34 @@
+language: objective-c
+osx_image: xcode11.1
+
+cache:
+  directories:
+  - "$HOME/.vendor/bundle/"
+  - Pods
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+
+if: "(branch = master AND type = push) OR (head_branch != master AND type = pull_request)"
+
+install:
+- bundle install --jobs=3 --retry=3 --path=$HOME/.vendor/bundle/
+- bundle exec pod install --repo-update
+- git lfs install
+- git lfs pull
+
+stages:
+  - name: Test UI
+
+jobs:
+  include:
+      - stage: Test UI
+        script: ./scripts/run_ui_tests.sh
+        env: Running UI Tests
+
+after_failure:
+- bundle exec danger
+- reports-publisher
+
+after_success:
+- bundle exec danger
+- reports-publisher
